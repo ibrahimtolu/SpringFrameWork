@@ -15,7 +15,6 @@ public class User extends BaseEntity {
      @Column(name = "ID",unique = true)
     private  Long id;
      @Column(name="firstname")
-
      private String ad;
      @Column(name="lastname")
     private  String soyad;

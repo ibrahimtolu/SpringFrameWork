@@ -1,21 +1,20 @@
 package com.ibrahim.test.services;
 
 import com.ibrahim.test.entity.User;
-import com.ibrahim.test.repo.UserRepository;
+import com.ibrahim.test.userdto.UserDto;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface UserService {
-    User createUser(User user);
+    UserDto createUser(UserDto user);
 
-    List<User> getUsers();
-    User getById(Long id);
-    User updateUser(Long id,User user);
+    List<UserDto> getUsers();
+
+    UserDto getById(Long id);
+
+    UserDto updateUser(Long id, UserDto user);
+
     Boolean deleteUser(Long id);
-    User userCreate(User user);
-
-
 
 
 }
